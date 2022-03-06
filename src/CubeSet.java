@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+
 import java.util.List;
 import java.util.Random;
 import java.util.Arrays;
@@ -33,7 +33,7 @@ public class CubeSet {
     }
 
     private boolean solved(int target){
-        Cube currCube,prevCube;
+        Cube currCube;
         for (int i = 0; i < cubeList.size(); i++) {
             currCube=cubeList.get(i);
             if (currCube.getCurrState()!=target){
